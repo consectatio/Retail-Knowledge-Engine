@@ -5,6 +5,9 @@ A local Graph RAG system for querying retail data using a graph + vector search 
 
 The system was built around this dataset (https://www.kaggle.com/datasets/vijayuv/onlineretail)
 
+The system is most definitely not perfect and not very accurate (but that may be due to my cheap ollama models).
+Possible Improvements could include testing with different models, having a better filter and embedding system, create weights for certain terms such as Countries (although this is done somewhat when embedding querires it's still far from perfect), and so on.
+
 ## Architecture
 ```
 CSV Data → Graph (NetworkX) → Vector Embeddings → Query → LLM Answer
